@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Hello! you have you first issue... I see progress somewhere. Thank you for your contribution. Please do ensure the project is bug free at all times. Thank you."
+        pr-message: "Congratulations on making your first pull request to this repo. We are happy to have you contribute to this game changing project. Thank you."

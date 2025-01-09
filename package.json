@@ -1,7 +1,0 @@
-{
-  "name": "cloud-package",
-  "main": "saver.js",
-  "dependencies": {
-      "moment": "^2.30.1"
-  }
-}

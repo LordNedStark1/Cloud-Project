@@ -1,4 +1,6 @@
 var http = require("http")
+console.log("Building cloud projec x ...");
+
 
 function onRquest(request, response) {
     response.writeHead(200, {"Content-Type": "text/plain"})

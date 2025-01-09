@@ -6,6 +6,6 @@ jobs:
         steps:
             - run: node --version
             - run: npm --version
-            - uses: actions/download-artifact@v4
+            - uses: actions/download-artifact@v3
             - run: npm install
             - run: node server.js

@@ -1,4 +1,8 @@
 var http = require("http")
+var moment = require("moment")
+var date = moment().format('LL')
+
+console.log("Useing moment ...", date);
 console.log("Building cloud projec x ...");
 
 
